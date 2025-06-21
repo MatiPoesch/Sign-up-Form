@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'pinyon_scriptregular';
+    src: url('./font/pinyonscript-regular-webfont.woff2') format('woff2'),
+         url('./font/fonta/pinyonscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+#ft {
+    margin:0 20%;
+    font-size: calc(16px + 3vw);
+    font-family:'pinyon_scriptregular',serif;
+}
+#main-body {
+    display: flex;
+    min-height: 100vh;   
+  
+
+}
+.imgdiv {
+    display: flex;
+    flex-grow: 30;
+    flex-basis: 20%;
+    flex-shrink: 1;
+    background:left no-repeat 
+    url("./img/forest.jpg");
+    background-size: cover;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 30% 0;
+    flex-grow: 1;
+    max-height: calc(20% + 1.1vw);
+  
+    background: 75% 50% no-repeat
+    url("./img/Logo.png");
+    background-size: calc(20% + 1.5vw);
+    background-color:rgba(255, 255, 255, 0.501);
+}
+#homep {
+    font-size: 1.5rem;
+}
+.formdiv {
+    flex-grow: 2;
+    padding: 5%;
+    box-shadow: 0 6px 6px 0px rgb(223, 223, 223);
+    text-align: left;
+}
+.homediv{
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(241, 241, 241);
+    flex-grow:1;
+    padding:10% 10% 5%;
+}
+.form-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 70;
+}
+.bottomdiv {
+    flex-grow:2;
+    padding: 2% 5%;
+}
+#create {
+    color: white;
+    padding: 0.6rem 0.6rem;
+    border:3px solid rgba(12, 48, 12, 0.719) ;
+    border-radius: 4px;
+    background-color: rgb(19, 73, 19);
+}
+#create:hover {
+    background-color: rgb(30, 109, 30);
+}
+#bottomp {
+    margin: 10px 0px;
+}
+#formp {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 5px 0px 40px;
+
+}
+#formseparator {
+    margin: 20px 0px;
+}
+.formdiv1 {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+input {
+    display: block;
+    width: 100%;
+    border: solid rgba(18, 49, 0, 0.719) 2px;
+    border-radius: 3px;
+}
+#inputpair {
+    display: flex;
+}   
+input, label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+  input:invalid {
+    border-color: red;
+  }
